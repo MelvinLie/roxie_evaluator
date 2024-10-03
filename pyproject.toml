@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "roxie-evaluator"
+version = "0.1.0"
+description = ""
+authors = ["meliebsc <melvin.liebsch@cern.ch>"]
+readme = "README.md"
+packages = [{include = "roxie_evaluator"}]
+include = [
+    { path= "cpp/bin/*", format = "wheel"},
+    ]
+
+[tool.poetry.build]
+generate-setup-file = false
+script = "build.py"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+numpy = "^1.26.4"
+numba = "^0.59.0"
+matplotlib = "^3.8.3"
+sphinx = "^7.2.6"
+sphinx-gallery = "^0.15.0"
+myst-parser = "^2.0.0"
+pyvista = "^0.43.4"
+pandas = "^2.2.1"
+gmsh = "^4.12.2"
+scipy = "^1.12.0"
+tqdm = "^4.66.2"
+cvxopt = "^1.3.2"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0",
+            "poetry-dynamic-versioning",
+            "Cython",
+            "numpy"]
+build-backend = "poetry_dynamic_versioning.backend"
