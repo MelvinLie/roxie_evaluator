@@ -7,6 +7,10 @@ poetry install
 
 Thats it!
 
-It is important that You have python dev installed. In Linux You get it like this:
+It is important that You have python dev installed. In Ubuntu You get it like this:
 
 sudo apt-get install python3-dev
+
+In CentOS You get it like this:
+
+sudo yum install python3-devel
