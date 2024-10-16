@@ -14,7 +14,7 @@ generate-setup-file = false
 script = "build.py"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.9"
 numpy = "^1.26.4"
 numba = "^0.59.0"
 matplotlib = "^3.8.3"
