@@ -15,5 +15,4 @@ In CentOS You get it like this:
 
 sudo yum install python3-devel
 
-Might also be missing
-libglu1-mesa
+# install also gmsh if You get issues
