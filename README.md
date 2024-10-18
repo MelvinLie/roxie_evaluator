@@ -14,3 +14,6 @@ sudo apt-get install python3-dev
 In CentOS You get it like this:
 
 sudo yum install python3-devel
+
+Might also be missing
+libglu1-mesa
